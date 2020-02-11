@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment">
@@ -9,17 +10,40 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="match_parent"
-        android:layout_height="254dp"
+        android:layout_width="198dp"
+        android:layout_height="105dp"
+        android:background="#009E1B1B"
+        android:src="@drawable/bandera-de-colombia"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="16dp"
         tools:src="@drawable/bandera-de-colombia" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Colombia"
         android:textAlignment="center"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="154dp" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="360dp"
+        android:layout_height="192dp"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="455dp"
+        tools:src="@drawable/flag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
