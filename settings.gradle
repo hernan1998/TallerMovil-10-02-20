@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='TallerMovil-10-02-20'
